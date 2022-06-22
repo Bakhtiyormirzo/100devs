@@ -8,10 +8,9 @@ function convert() {
     // get the celsius value
     let temp = document.querySelector('#temp').value 
 
-    // convert to farenheight 
+    // convert to fahrenheit 
     temp = temp * 9/5 + 32
 
     // show it
     document.querySelector('#placeToSee').innerText = temp
 }
-
