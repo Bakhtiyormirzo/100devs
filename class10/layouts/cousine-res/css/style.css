@@ -1,0 +1,107 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav * {
+  list-style: none;
+}
+
+nav > ul > li {
+  width: 10%;
+  float: left;
+}
+
+nav {
+  margin-left: 55%;
+}
+
+main {
+  height: 400px;
+  padding-top: 90px;
+  padding-left: 100px;
+}
+
+main > ul > li {
+  list-style: none;
+  width: 10%;
+  float: left;
+}
+
+main + section {
+  padding-left: 30%;
+  padding-right: 20%;
+  height: 300px;
+}
+
+main + section + section {
+  padding-top: 50px;
+  height: 300px;
+}
+
+main + section + section ul {
+  padding-left: 35%;
+  height: 40px;
+}
+
+main + section + section ul > li {
+  list-style: none;
+  width: 10%;
+  float: left;
+  
+}
+
+main + section + section h4,
+main + section + section h1 {
+  text-align: center;
+}
+
+main + section + section section {
+  height: 200px;
+  width: 25%;
+  float: left;
+}
+
+main + section + section + section {
+  text-align: center;
+}
+
+main + section + section + section section {
+  width: 50%;
+  float: left;
+}
+
+main + section + section + section + section {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

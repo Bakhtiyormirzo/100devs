@@ -14,6 +14,6 @@ html head + body header.top + section#rugratsWildThornberrysBestCrossOverAllTime
 }
 
 /* Please select "Let's get down to business..." with the highest level of specificity possible */
-html head + body section#rugratsWildThornberrysBestCrossOverAllTime + section#changedIt > p {
+html head + body section#rugratsWildThornberrysBestCrossOverAllTime + section#changedIt h2 + p {
     color: orange !important;
 }
