@@ -6,29 +6,42 @@
 //If under 30, tell them they can not rent fancy cars affordably
 //If over 30, tell them there is nothing left to look forward too
 
-let age = 17
-if (age < 16) {
-    console.log("You can not drive")
-} else if (age < 18) {
-    console.log("You can not hate from outside the club, because they can't even get in")
-} else if (age < 21) {
-    console.log("You can not drink")
-} else if (age < 25) {
-    console.log("You can not rent cars affordably")
-} else if (age < 30) {
-    console.log("You can not rent fancy cars affordably")
-} else {
-    console.log("There is nothing left to look forward too")
-}
+// let age = 17
+// if (age < 16) {
+//     console.log("You can not drive")
+// } else if (age < 18) {
+//     console.log("You can not hate from outside the club, because they can't even get in")
+// } else if (age < 21) {
+//     console.log("You can not drink")
+// } else if (age < 25) {
+//     console.log("You can not rent cars affordably")
+// } else if (age < 30) {
+//     console.log("You can not rent fancy cars affordably")
+// } else {
+//     console.log("There is nothing left to look forward too")
+// }
 
 //--- Harder
 //On click of the h1
 //Take the value from the input
 //Place the result of the conditional in the paragraph
-// document.querySelector("h1").addEventListener("click", run)
+document.querySelector("h1").addEventListener("click", run)
 
-// function run() {
-//     let inputedVal = document.querySelector('#danceDanceRevolution').value
-//     document.querySelector("p").innerText = 
-// }
+function run() {
+    let age = document.querySelector('#danceDanceRevolution').value
+    const msg = document.querySelector("p")
+    if (age < 16) {
+        msg.innerText = "You can not drive"
+    } else if (age < 18) {
+        msg.innerText = "You can not hate from outside the club, because they can't even get in"
+    } else if (age < 21) {
+        msg.innerText = "You can not drink"
+    } else if (age < 25) {
+        msg.innerText = "You can not rent cars affordably"
+    } else if (age < 30) {
+        msg.innerText = "You can not rent fancy cars affordably"
+    } else {
+        msg.innerText = "There is nothing left to look forward too"
+    }
+}
 
