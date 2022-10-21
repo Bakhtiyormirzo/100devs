@@ -9,7 +9,7 @@ function check() {
   if(day === "tuesday" || day === "thursday"){
     console.log("YOU HAVE CLASS")
   }else if( day === "saturday" || day === "sunday"){
-    console.log("Its The Weekend")
+    console.log("It's The Weekend")
   }else{
     console.log("BORING")
   }

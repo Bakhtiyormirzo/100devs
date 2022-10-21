@@ -1,6 +1,6 @@
 //--- Easy
 //create a variable and assign it a number
-let num = 15
+let num = 7
 
 //minus 10 from that number
 num -= 10
@@ -10,13 +10,14 @@ console.log(num)
 
 //--- Medium
 //create a variable that holds a value from the input
-// let inputValue = document.querySelector('#danceDanceRevolution').value 
+let inputValue = Number(document.querySelector('#danceDanceRevolution').value)
+
 
 //add 25 to that number
-// inputValue += 25
+inputValue += 25
 
 //alert that number
-// alert(inputValue)
+//alert(inputValue)
 
 //--- Hard
 //create a variable that holds the h1
@@ -26,6 +27,5 @@ const h1Holder = document.querySelector('h1')
 h1Holder.addEventListener('click', sum)
 
 function sum() {
-    let inputValue = document.querySelector('#danceDanceRevolution').value 
-    console.log(num + Number(inputValue)) 
+    console.log(num + inputValue)
 }
