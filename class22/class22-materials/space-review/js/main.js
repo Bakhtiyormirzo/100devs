@@ -21,7 +21,16 @@ function numSquared(arr) {
 function reversed(str) {
     console.log(str.reverse())
 }
-reversed('Hello')
+//reversed('Hello')
 
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
+function isPalindrome(str) {
+    if (str.length === 0 || str.length === 1) {
+        return true
+    }
+    return (str[0] === str[str.length-1]) && isPalindrome(str.slice(1,-1))
+}
+
+console.log(isPalindrome('kiyik'))
+console.log(isPalindrome('hello'))
