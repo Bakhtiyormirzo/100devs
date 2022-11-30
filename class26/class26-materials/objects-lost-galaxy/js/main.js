@@ -7,7 +7,15 @@ pizza.crust = 'stuffed'
 pizza.toppings = ['spinage', 'onion', 'jalapenos']
 pizza.sause = 'heavy'
 
-pizza.taste = function() {
-    console.log('Tastes awesome')
+pizza.estimatedTimeDelivery = function() {
+    console.log('Calculating ...')
+}
+
+pizza.burnMouth = function() {
+    console.log('VVjbbqbxwuxqwx')
+}
+
+pizza.frisbee = function() {
+    console.log('Yeeeeet')
 }
 
